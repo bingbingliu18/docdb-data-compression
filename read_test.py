@@ -8,7 +8,7 @@ import bson
 import random
 from pymongo import MongoClient, ASCENDING, UpdateOne, InsertOne, DeleteOne, ReplaceOne
 
-PROCESS_NUM = 20
+PROCESS_NUM = 200
 LOOP_NUM_PER_PROCESS = 10001
 with open('/home/ec2-user/data_compression/ck.json') as f:
     data = json.load(f)
