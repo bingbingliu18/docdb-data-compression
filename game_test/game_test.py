@@ -13,7 +13,7 @@ LOOP_NUM_PER_PROCESS = 1001
 with open('/root/game_test/player_data.json') as f:
     data = json.load(f)
 def fun1(name):
-    client = pymongo.MongoClient("mongodb://root:Welcome1@dds-bp15cb9938c2a8f42.mongodb.rds.aliyuncs.com:3717,dds-bp15cb9938c2a8f41.mongodb.rds.aliyuncs.com:3717/?replicaSet=mgset-76203820&w=1")
+    client = pymongo.MongoClient("mongodb://root:******@dds-bp15cb9938c2a8f42.mongodb.rds.aliyuncs.com:3717,dds-bp15cb9938c2a8f41.mongodb.rds.aliyuncs.com:3717/?replicaSet=mgset-76203820&w=1")
     #client.write_concern = {'w': 1, 'wtimeout': 1000, 'j': True}
     testdb = client["test"]
     #testdb = client.get_database(
